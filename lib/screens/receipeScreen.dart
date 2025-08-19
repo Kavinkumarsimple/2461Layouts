@@ -1,6 +1,7 @@
 // ignore_for_file: sort_child_properties_last, prefer_const_constructors, prefer_const_literals_to_create_immutables
 
 import 'package:flutter/material.dart';
+import 'package:layouts_2461/Components/instructionWidget.dart';
 
 class Receipescreen extends StatelessWidget {
   const Receipescreen({super.key});
@@ -10,57 +11,17 @@ class Receipescreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.green,
-        title: Text("WhatsApp"),
+        title: Text("Receipe Screen"),
       ),
-      body: Container(
-        decoration: BoxDecoration(
-          border: Border.all(width: 1),
-          color: Color.fromARGB(255, 229, 243, 255)
-        ),
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          children: [
-            // Icon Has to be sent from here dynamically.
-            InstructionCard(
-              title: "Prep",
-              duration: "25 Min",
-            ),
-            InstructionCard(
-              title: "Cook",
-              duration: "10 Min",
-            ),
-            InstructionCard(
-              title: "Feeds",
-              duration: "20 Min",
-            ),
-          ],
-        ),
+      body: Column(
+        children: [
+          // component 1
+          // component 2
+          // component 3
+          InstructionWidget(),
+        ],
       ),
     );
   }
 }
 
-class InstructionCard extends StatelessWidget {
-  final String title;
-  final String duration;
-  const InstructionCard(
-      {super.key, required this.title, required this.duration});
-
-  @override
-  Widget build(BuildContext context) {
-    return Column(
-      mainAxisSize: MainAxisSize.min,
-      children: [
-        Icon(
-          Icons.home,
-          size: 30,
-          color: Colors.blue,
-        ),
-        SizedBox(height: 1),
-        Text(title),
-        SizedBox(height: 8),
-        Text(duration)
-      ],
-    );
-  }
-}
