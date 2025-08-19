@@ -1,6 +1,7 @@
 // ignore_for_file: sort_child_properties_last, prefer_const_constructors, prefer_const_literals_to_create_immutables
 
 import 'package:flutter/material.dart';
+import 'package:layouts_2461/Components/IntructionBox.dart';
 import 'package:layouts_2461/Components/instructionWidget.dart';
 
 class Receipescreen extends StatelessWidget {
@@ -16,12 +17,20 @@ class Receipescreen extends StatelessWidget {
       body: Column(
         children: [
           // component 1
+          IntructionBox(
+            childWidget: Text("bdssadsadsad"),
+          ),
           // component 2
+          IntructionBox(
+            childWidget: Text("kdjnfksdmflksmdlkfdsfsdf"),
+          ),
           // component 3
+          IntructionBox(
+            childWidget: Text("lmlmlmlm"),
+          ),
           InstructionWidget(),
         ],
       ),
     );
   }
 }
-
