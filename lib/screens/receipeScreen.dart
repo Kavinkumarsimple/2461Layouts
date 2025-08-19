@@ -12,23 +12,29 @@ class Receipescreen extends StatelessWidget {
         backgroundColor: Colors.green,
         title: Text("WhatsApp"),
       ),
-      body: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-        children: [
-          // Icon Has to be sent from here dynamically.
-          InstructionCard(
-            title: "Prep",
-            duration: "25 Min",
-          ),
-          InstructionCard(
-            title: "Cook",
-            duration: "10 Min",
-          ),
-          InstructionCard(
-            title: "Feeds",
-            duration: "20 Min",
-          ),
-        ],
+      body: Container(
+        decoration: BoxDecoration(
+          border: Border.all(width: 1),
+          color: Color.fromARGB(255, 229, 243, 255)
+        ),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: [
+            // Icon Has to be sent from here dynamically.
+            InstructionCard(
+              title: "Prep",
+              duration: "25 Min",
+            ),
+            InstructionCard(
+              title: "Cook",
+              duration: "10 Min",
+            ),
+            InstructionCard(
+              title: "Feeds",
+              duration: "20 Min",
+            ),
+          ],
+        ),
       ),
     );
   }
@@ -43,6 +49,7 @@ class InstructionCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
+      mainAxisSize: MainAxisSize.min,
       children: [
         Icon(
           Icons.home,

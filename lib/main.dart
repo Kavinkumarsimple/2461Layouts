@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:layouts_2461/screens/HomeScreen.dart';
-import 'package:layouts_2461/screens/TextExample.dart';
-import 'package:layouts_2461/screens/columnExample.dart';
 import 'package:layouts_2461/screens/receipeScreen.dart';
-import 'package:layouts_2461/screens/rowExample.dart';
+
 
 void main() {
   runApp(const MyApp());
