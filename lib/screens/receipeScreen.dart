@@ -26,7 +26,21 @@ class Receipescreen extends StatelessWidget {
           ),
           // component 3
           IntructionBox(
-            childWidget: Text("lmlmlmlm"),
+            childWidget: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: [
+                Row(
+                  children: [
+                    Icon(Icons.star),
+                    Icon(Icons.star),
+                    Icon(Icons.star),
+                    Icon(Icons.star),
+                    Icon(Icons.star),
+                  ],
+                ),
+                Text("180 Reviews")
+              ],
+            ),
           ),
           InstructionWidget(),
         ],
